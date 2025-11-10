@@ -29,7 +29,9 @@ CREATE TABLE usuarios (
 ### 2. Insertar datos
 ```sql
 INSERT INTO usuarios (data)
-VALUES ('{"nombre": "Ana", "activo": true, "edad": 30}');
+VALUES 
+  ('{"nombre": "Ana", "activo": true, "edad": 30}'),
+  ('{"nombre": "Juan", "activo": false, "edad": 25}');
 ```
 
 ### 3. Consultar datos
