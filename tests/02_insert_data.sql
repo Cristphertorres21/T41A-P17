@@ -1,4 +1,4 @@
-INSERT INTO usuarios (data)
-VALUES 
-  ('{"nombre": "Ana", "activo": true, "edad": 30}'),
-  ('{"nombre": "Juan", "activo": false, "edad": 25}');
+INSERT INTO productos (nombre, atributos)
+VALUES
+('Laptop', '{"marca": "Dell", "ram": "16GB"}'),
+('Teléfono', '{"color": "Negro", "pantalla": "6 pulgadas"}');
