@@ -42,17 +42,17 @@ jobs:
       - name: Create tables
         run: |
           echo "Creating tables..."
-          PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f ./tests/01_create_tables.sql
+          PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 01_create_tables.sql
 
       - name: Insert data
         run: |
           echo "Inserting data..."
-          PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f ./tests/02_insert_data.sql
+          PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 02_insert_data.sql
 
       - name: Run queries or procedures
         run: |
           echo "Running queries..."
-          PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f ./tests/03_queries.sql
+          PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 03_query_data.sql
 
       - name: Install Python dependencies
         run: pip install psycopg2 pytest
